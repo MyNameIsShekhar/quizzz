@@ -6,7 +6,7 @@ app.use(express.json());
 
 let db;
 
-mongodb.MongoClient.connect('mongodb://localhost:27017', function(err, client) {
+mongodb.MongoClient.connect('mongodb+srv://shuyaaaaa12:NvpoBuRp7MVPcAYA@cluster0.q2yycqx.mongodb.net/', function(err, client) {
     if(err) throw err;
     db = client.db('quizApp');
     app.listen(3000, () => console.log('Server is running on port 3000'));
